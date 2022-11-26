@@ -1,0 +1,137 @@
+.ProfileRightBar {
+  flex: 1;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40vh;
+    margin: 0;
+    background: $clr_gray_extra_light;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    & > h3 {
+      margin: 15px;
+    }
+
+    &_followers {
+      display: flex;
+      flex-direction: column;
+
+      &_content {
+        display: flex;
+        align-items: top;
+        cursor: pointer;
+        margin-top: 10px;
+
+        & > img {
+          height: 60px;
+          width: 60px;
+          border-radius: 10px;
+        }
+        & > span {
+          text-align: start;
+          margin-left: 10px;
+        }
+      }
+
+      &_btn {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 55%;
+        margin-top: -25px;
+
+        & > button {
+          width: 70px;
+          border: none;
+          padding: 2px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .btnA {
+    background-color: $clr_green;
+    color: black;
+  }
+  .btnD {
+    background-color: black;
+    color: $clr_green;
+  }
+
+  &_container2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 60vh;
+    background: $clr_gray_extra_light;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    & > h3 {
+      text-align: center;
+      color: $clr_blue;
+    }
+
+    &_profile_img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    &_profile_text {
+      text-align: start;
+
+      & > span {
+        font-size: 15px;
+        font-weight: bold;
+        color: $clr_blue;
+      }
+      & > p {
+        font-size: 10px;
+        color: $clr_orange;
+      }
+    }
+
+    &_friend {
+      display: flex;
+      align-items: center;
+
+      & > p {
+        margin: 10px;
+      }
+    }
+
+    &_addFriend {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    &_bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_icon {
+      background-color: $clr_green;
+      border-radius: 50%;
+      padding: 5px;
+      text-align: center;
+      margin-right: 20px;
+    }
+  }
+}
+.ProfileRightBar_container::-webkit-scrollbar,
+.ProfileRightBar_container2::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,115 @@
+.RightBar {
+  flex: 1;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 40vh;
+    background: $clr_gray_extra_light;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+
+    &_adds {
+      display: flex;
+      margin: 2%;
+
+      &_img {
+        width: 130px;
+        height: 80px;
+        border-radius: 20px;
+        margin: 1%;
+      }
+    }
+
+    &_titles {
+      margin: 10px;
+
+      & > span {
+        font-size: 15px;
+        font-weight: bold;
+        color: $clr_blue;
+      }
+      & > p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &_container2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 60vh;
+    background: $clr_gray_extra_light;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+& > h3{
+    text-align: center;
+    color: $clr_blue;
+
+}
+
+    &_profile_img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+    
+    &_profile_text{
+        text-align: start;
+
+        & > span{
+            font-size: 15px;
+            font-weight: bold;
+            color: $clr_blue;
+        }
+        & > p{
+            font-size: 10px;
+            color: $clr_orange;
+        }
+        
+    }
+
+    &_friend{
+        display: flex;
+        align-items: center;
+
+        & > p{
+            margin: 10px;
+        }
+    }
+
+    &_addFriend {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    &_bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_icon{
+        background-color: $clr_green;
+        border-radius: 50%;
+        padding: 5px;
+        text-align: center;
+        margin-right: 20px;
+        
+    }
+  }
+}
+.RightBar_container::-webkit-scrollbar, .RightBar_container2::-webkit-scrollbar {
+  display: none;
+}

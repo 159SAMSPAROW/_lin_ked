@@ -1,0 +1,20 @@
+@import "./base/settings";
+
+@import "./pages/home";
+@import "./pages/profile";
+@import "./pages/login";
+@import "./pages/signup";
+
+@import "./components/navbar";
+@import "./components/contentPost";
+@import "./components/mainPost";
+@import "./components/rightBar";
+@import "./components/leftBar";
+@import "./components/post";
+@import "./components/profileLeftBar";
+@import "./components/profileRightBar";
+@import "./components/profilemainPost";
+@import "./components/profilePost";
+@import "./pages/verifyEmail";
+@import "./pages/forgotPassword";
+@import "./pages/restPassword"

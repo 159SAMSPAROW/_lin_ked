@@ -1,0 +1,713 @@
+* {
+  font-family: "Caveat", cursive;
+  margin: 1px;
+  box-sizing: border-box;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home {
+  background: black;
+}
+
+.ComponentContainer {
+  width: 99%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProfileContainer {
+  background: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.subProfileContainer {
+  width: 99%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainNavbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  background: black;
+  box-shadow: 0 5px 15px #e6e9f0;
+  border-radius: 10px;
+}
+.mainNavbar_logo_container {
+  flex: 0.2;
+  margin-left: 5%;
+  color: #bccbde;
+}
+.mainNavbar_icons_container {
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+  flex: 0.2;
+}
+.mainNavbar_icons_container_icons {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  background: #e6e9f0;
+  border-radius: 50%;
+  padding: 3px;
+  font-weight: bold;
+}
+.mainNavbar_icons_container_profile {
+  display: flex;
+  align-items: center;
+}
+.mainNavbar_icons_container_profile_profileImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.mainNavbar_icons_container_profile > p {
+  margin-left: 5px;
+  color: #bccbde;
+}
+.mainNavbar_search_input_container {
+  display: flex;
+  align-items: center;
+  flex: 4;
+  margin: 0 25% 0 25%;
+  background-color: #e6e9f0;
+  padding: 1px;
+  border-radius: 10px;
+}
+.mainNavbar_search_input_container > input {
+  margin-left: 5px;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #e6e9f0;
+}
+.mainNavbar_search_input_container_icons {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+.ContentUploadContainer {
+  width: 90%;
+  height: 22vh;
+  background-color: #e6e9f0;
+  margin: 20px auto 20px auto;
+  border: 2px outset #e05915;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px #2C32AD;
+}
+.ContentUploadContainer_content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.ContentUploadContainer_writingPart {
+  width: 29pc;
+  margin: 10px;
+  height: 4vh;
+  border: none;
+  border-radius: 7px;
+}
+.ContentUploadContainer_profileimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.ContentUploadContainer_icons {
+  display: flex;
+  margin-left: 10px;
+}
+.ContentUploadContainer_icons_btn {
+  width: 80px;
+  height: 25px;
+  margin-left: 410px;
+  margin-top: 47px;
+  padding: 1px;
+  border: none;
+  background-color: #cdd422;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.ContentUploadContainer_footer {
+  display: flex;
+}
+.ContentUploadContainer_icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  margin-top: 47px;
+}
+
+.MainPost {
+  flex: 3;
+  width: 80%;
+  margin: 20px;
+  background-color: #e6e9f0;
+  border-radius: 20px;
+}
+
+.RightBar {
+  flex: 1;
+}
+.RightBar_container {
+  display: flex;
+  flex-direction: column;
+  width: 25pc;
+  height: 40vh;
+  background: #e6e9f0;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.RightBar_container_adds {
+  display: flex;
+  margin: 2%;
+}
+.RightBar_container_adds_img {
+  width: 130px;
+  height: 80px;
+  border-radius: 20px;
+  margin: 1%;
+}
+.RightBar_container_titles {
+  margin: 10px;
+}
+.RightBar_container_titles > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2C32AD;
+}
+.RightBar_container_titles > p {
+  font-size: 12px;
+}
+.RightBar_container2 {
+  display: flex;
+  flex-direction: column;
+  width: 25pc;
+  height: 60vh;
+  background: #e6e9f0;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.RightBar_container2 > h3 {
+  text-align: center;
+  color: #2C32AD;
+}
+.RightBar_container2_profile_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.RightBar_container2_profile_text {
+  text-align: start;
+}
+.RightBar_container2_profile_text > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2C32AD;
+}
+.RightBar_container2_profile_text > p {
+  font-size: 10px;
+  color: #e05915;
+}
+.RightBar_container2_friend {
+  display: flex;
+  align-items: center;
+}
+.RightBar_container2_friend > p {
+  margin: 10px;
+}
+.RightBar_container2_addFriend {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.RightBar_container2_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.RightBar_container2_icon {
+  background-color: #cdd422;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.LeftBar {
+  flex: 1;
+}
+.LeftBar_Notifications_Container {
+  width: 18pc;
+  height: 60vh;
+  background: #e6e9f0;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.LeftBar_Notifications_Container_titles {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.LeftBar_Notifications_Container_titles > span {
+  margin-top: 11px;
+}
+.LeftBar_Notifications_Container_titles > p {
+  margin: 12px;
+  color: #e05915;
+}
+.LeftBar_Notifications_Container_profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2%;
+}
+.LeftBar_Notifications_Container_profile > span {
+  margin-left: 5px;
+  color: #e05915;
+  font-size: 13px;
+  text-align: start;
+  width: 120px;
+  word-break: break-all;
+}
+.LeftBar_Notifications_Container_img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.LeftBar_Notifications_Container_img_followers {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 43px;
+}
+.LeftBar_Notifications_Container_img_like {
+  width: 30px;
+  height: 30px;
+  margin-left: 43px;
+  border-radius: 3px;
+}
+.LeftBar_Notifications_Container_explore_titles {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.LeftBar_Notifications_Container_explore_titles > span {
+  margin: 11px 0 0 -7px;
+}
+.LeftBar_Notifications_Container_explore_titles > p {
+  margin: 12px 12px 12px 37px;
+  color: #e05915;
+}
+.LeftBar_Notifications_Container_explore_img {
+  width: 85px;
+  margin-left: 4px;
+  height: 150px;
+  border-radius: 7px;
+  margin-top: 6px;
+}
+
+.PostContainer {
+  width: 90%;
+  border: 2px outset #e05915;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px #2C32AD;
+  margin: 5%;
+}
+.PostContainer_sub_post_full_content {
+  height: auto;
+}
+.PostContainer_sub_post_full_content_header {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  align-items: center;
+}
+.PostContainer_sub_post_full_content_header_profileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.PostContainer_sub_post_full_content_header_info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.PostContainer_sub_post_full_content_header_info > span {
+  margin-right: 5px;
+}
+.PostContainer_sub_post_full_content_header_info > p {
+  width: 200px;
+  color: #e05915;
+  margin-right: 150px;
+}
+.PostContainer_sub_post_full_content_header_more_options {
+  position: relative;
+  left: 160px;
+  width: 30px;
+  height: 30px;
+}
+.PostContainer_sub_post_full_content > p {
+  margin: 1% 1% 1% 12%;
+}
+.PostContainer_sub_post_full_content_post_img {
+  width: 100%;
+}
+.PostContainer_sub_post_full_content_footer {
+  display: flex;
+  width: 100%;
+  margin-left: 18px;
+}
+.PostContainer_sub_post_full_content_footer_container {
+  display: flex;
+  align-items: center;
+}
+.PostContainer_sub_post_full_content_footer_container > span {
+  width: 120px;
+}
+.PostContainer_sub_post_full_content_footer_container_share {
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+}
+.PostContainer_sub_post_full_content_footer_icons {
+  width: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Bottom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.Bottom_img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.Bottom > span {
+  margin-left: 5px;
+}
+.Bottom > p {
+  margin-left: 25px;
+  color: #e05915;
+  word-break: break-all;
+  padding: 5px;
+}
+.Bottom > input {
+  width: 20pc;
+  margin-left: 10px;
+  border: none;
+  height: 5vh;
+  background-color: #e6e9f0;
+}
+.Bottom_addCommentBtn {
+  padding: 5px;
+  border: none;
+  background-color: #cdd422;
+  border-radius: 7px;
+  margin-left: 150px;
+  cursor: pointer;
+}
+.Bottom_reply {
+  width: 70px;
+  margin-left: 55px;
+  text-align: start;
+  margin: 10px 0 10px 55px;
+  color: #cdd422;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 7px;
+}
+.Bottom_reply > p {
+  padding: 3px;
+  text-align: center;
+  margin: 3px;
+}
+
+.ProfileLeftBar {
+  flex: 1;
+}
+.ProfileLeftBar_Container {
+  width: 18pc;
+  height: 55vh;
+  background: #cdd422;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.ProfileLeftBar_Container_ProfilePageCover {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+}
+.ProfileLeftBar_Container_profile {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+}
+.ProfileLeftBar_Container_profile > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.ProfileLeftBar_Container_profile_info {
+  display: flex;
+  flex-direction: column;
+}
+.ProfileLeftBar_Container_profile_info > span {
+  margin-top: 22px;
+  font-weight: bold;
+}
+.ProfileLeftBar_Container_profile_info > p {
+  display: inline;
+  font-size: 13px;
+  margin-top: -5px;
+}
+.ProfileLeftBar_Container_profile_views {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.ProfileLeftBar_Container_profile_views > span {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.ProfileLeftBar_Container_profile_views > p {
+  margin-right: 20px;
+  margin-top: 4px;
+  font-size: 12px;
+}
+.ProfileLeftBar_Container_friend {
+  display: flex;
+  justify-content: space-between;
+}
+.ProfileLeftBar_Container_friend > span {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.ProfileLeftBar_Container_friend > p {
+  margin-right: 20px;
+  margin-top: 4px;
+  font-size: 12px;
+}
+.ProfileLeftBar_Container_user_bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.ProfileLeftBar_Container_user_bio > h5 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.ProfileLeftBar_Container_user_bio > p {
+  text-align: start;
+  margin: 15px;
+  font-size: 12px;
+}
+.ProfileLeftBar_Container > button {
+  width: 100%;
+  background-color: black;
+  color: #cdd422;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.ProfileLeftBar_Container > h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.ProfileLeftBar_Container_friends_title {
+  display: flex;
+  justify-content: space-around;
+}
+.ProfileLeftBar_Container_friends_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+.ProfileLeftBar_Container_friends {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ProfileLeftBar_Container_friends > span {
+  margin-left: 0;
+}
+.ProfileLeftBar_Container_friends_img {
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.ProfileRightBar {
+  flex: 1;
+}
+.ProfileRightBar_container {
+  display: flex;
+  flex-direction: column;
+  width: 25pc;
+  height: 40vh;
+  background: #e6e9f0;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.ProfileRightBar_container > h3 {
+  margin: 15px;
+}
+.ProfileRightBar_container_friends {
+  display: flex;
+  flex-direction: column;
+}
+.ProfileRightBar_container_friends_content {
+  display: flex;
+  align-items: top;
+  cursor: pointer;
+}
+.ProfileRightBar_container_friends_content > img {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+}
+.ProfileRightBar_container_friends_content > span {
+  text-align: start;
+  margin-left: 10px;
+}
+.ProfileRightBar_container_friends_btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 55%;
+  margin-top: -25px;
+}
+.ProfileRightBar_container_friends_btn > button {
+  width: 70px;
+  border: none;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ProfileRightBar .btnA {
+  background-color: #cdd422;
+  color: black;
+}
+.ProfileRightBar .btnD {
+  background-color: black;
+  color: #cdd422;
+}
+.ProfileRightBar_container2 {
+  display: flex;
+  flex-direction: column;
+  width: 25pc;
+  height: 60vh;
+  background: #e6e9f0;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.ProfileRightBar_container2 > h3 {
+  text-align: center;
+  color: #2C32AD;
+}
+.ProfileRightBar_container2_profile_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.ProfileRightBar_container2_profile_text {
+  text-align: start;
+}
+.ProfileRightBar_container2_profile_text > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2C32AD;
+}
+.ProfileRightBar_container2_profile_text > p {
+  font-size: 10px;
+  color: #e05915;
+}
+.ProfileRightBar_container2_friend {
+  display: flex;
+  align-items: center;
+}
+.ProfileRightBar_container2_friend > p {
+  margin: 10px;
+}
+.ProfileRightBar_container2_addFriend {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.ProfileRightBar_container2_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProfileRightBar_container2_icon {
+  background-color: #cdd422;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.ProfileMainPost {
+  flex: 3;
+  width: 80%;
+  margin: 20px;
+  background-color: #e6e9f0;
+  border-radius: 20px;
+}
+.ProfileMainPost_coverImg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+.ProfileMainPost_coverImg > img {
+  width: 100%;
+  height: 35vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-position: 50% 15%;
+     object-position: 50% 15%;
+  margin: 0;
+}
+.ProfileMainPost_coverImg > h2 {
+  margin: -40px 0 20px 20px;
+}/*# sourceMappingURL=index.css.map */

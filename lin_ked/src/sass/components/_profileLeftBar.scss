@@ -1,0 +1,146 @@
+.ProfileLeftBar {
+  flex: 1;
+
+  &_Container {
+    width: 80%;
+    height: 60vh;
+    background: $clr_green;
+    margin-top: 30px;
+    margin-left: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &_ProfilePageCover {
+      width: 100%;
+      height: 100px;
+      margin: 0;
+    }
+
+    &_profile {
+      display: flex;
+      align-items: center;
+      margin-top: -30px;
+
+      & > img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 10px;
+      }
+
+      &_info {
+        display: flex;
+        flex-direction: column;
+        & > span {
+          margin-top: 22px;
+          font-weight: bold;
+        }
+
+        & > p {
+          display: inline;
+          font-size: 13px;
+          margin-top: -5px;
+        }
+      }
+    }
+
+    &_profile_views {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+
+      & > span {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      & > p {
+        margin-right: 20px;
+        margin-top: 4px;
+        font-size: 12px;
+      }
+    }
+
+    &_friend {
+      display: flex;
+      justify-content: space-between;
+
+      & > span {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      & > p {
+        margin-right: 20px;
+        margin-top: 4px;
+        font-size: 12px;
+      }
+    }
+
+    &_user_bio {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+
+      & > h5 {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      & > p {
+        text-align: start;
+        margin: 15px;
+        font-size: 12px;
+      }
+    }
+    & > button {
+      width: 100%;
+      background-color: black;
+      color: $clr_green;
+      margin: 0;
+      border: none;
+      cursor: pointer;
+    }
+
+    & > h3 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &_friends_title {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &_friends_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &_friends {
+      display: flex;
+      align-items: center;
+     
+      & > span {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      & > p {
+        margin-left: 50%;
+        margin-top: 4px;
+        font-size: 12px;
+      }
+  
+
+    
+    }
+    &_friends_img {
+      margin: 5px;
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+    }
+  }
+}
+.ProfileLeftBar_Container::-webkit-scrollbar {
+  display: none;
+}

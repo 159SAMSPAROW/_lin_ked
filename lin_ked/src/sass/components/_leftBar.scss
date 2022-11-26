@@ -1,0 +1,100 @@
+.LeftBar {
+  flex: 1;
+  margin: 2% 0 0 1%;
+
+  &_Notifications_Container {
+    width: 95%;
+    height: 60vh;
+    background: $clr_gray_extra_light;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &_titles {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+
+      & > span {
+        margin-top: 11px;
+      }
+
+      & > p {
+        margin: 12px;
+        color: $clr_orange;
+      }
+    }
+
+    &_profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2%;
+
+      & > span {
+        margin-left: 5px;
+        color: $clr_orange;
+        font-size: 13px;
+        text-align: start;
+        width: 120px;
+        word-break: break-all;
+      }
+    }
+
+    &_img {
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      margin-left: 10px;
+
+      &_followers {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-left: 43px;
+      }
+
+      &_like {
+        width: 30px;
+        height: 30px;
+        margin-left: 43px;
+        border-radius: 3px;
+      }
+    }
+
+    &_explore_titles {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      & > span {
+        margin: 11px 0 0 -7px;
+      }
+
+      & > p {
+        margin: 12px 12px 12px 37px;
+        color: $clr_orange;
+      }
+    }
+
+    &_explore_img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 94%;
+      margin: 3%;
+
+      & > img {
+        width: 40%;
+        height: 70px;
+        border-radius: 10px;
+        margin: 1%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+.LeftBar_Notifications_Container::-webkit-scrollbar {
+  display: none;
+}

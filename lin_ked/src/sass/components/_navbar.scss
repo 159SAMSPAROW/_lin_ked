@@ -1,0 +1,82 @@
+.mainNavbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  background: black;
+  box-shadow: 0 5px 15px $clr_gray_extra_light;
+  border-radius: 10px;
+ 
+
+  &_logo_container {
+    flex: 0.2;
+    margin-left: 5%;
+    color: $clr_gray_light;
+  }
+
+  &_icons_container {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    flex: 0.2;
+    
+
+    &_icons {
+      width: 25px;
+      height: 25px;
+      margin-left: 20px;
+      background: $clr_gray_extra_light;
+      border-radius: 50%;
+      padding: 3px;
+      font-weight: bold;
+    }
+
+    &_profile {
+      display: flex;
+      align-items: center;
+
+      &_profileImg {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 20px;
+      }
+
+      & > p {
+        margin-left: 5px;
+        color: $clr_gray_light;
+      }
+    }
+    &_logout{
+      margin: 15px;
+      color: $clr_gray_extra_light;
+      cursor: pointer;
+    }
+  }
+
+  &_search_input_container {
+    display: flex;
+    align-items: center;
+    flex: 4;
+    margin: 0 25% 0 25%;
+    background-color: $clr_gray_extra_light;
+    padding: 1px;
+    border-radius: 10px;
+
+    & > input {
+      margin-left: 5px;
+      width: 100%;
+      border: none;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: $clr_gray_extra_light;
+    }
+
+    &_icons {
+      width: 20px;
+      height: 20px;
+      margin-left: 4px;
+    }
+  }
+}

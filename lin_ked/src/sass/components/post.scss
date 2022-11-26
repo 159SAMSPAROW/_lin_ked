@@ -1,0 +1,154 @@
+.PostContainer {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px $clr_blue;
+  margin: 5%;
+
+  &_sub_post {
+    
+    &_full_content {
+      border: 2px outset $clr_orange;
+      border-radius: 20px;
+      height: auto;
+      border-radius: 20px;
+      background-color: $clr_gray_extra_light;
+      margin: 0;
+
+      &_header {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        align-items: center;
+
+        &_profileImg {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin: 10px;
+        }
+
+        &_info {
+          display: flex;
+          align-items: center;
+          width: 100%;
+
+          & > span {
+            margin-right: 5px;
+          }
+
+          & > p {
+            width: 200px;
+            color: $clr_orange;
+            margin-right: 150px;
+          }
+        }
+        &_more_options {
+          position: relative;
+          left: 160px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+      & > p {
+        margin: 1% 1% 1% 12%;
+      }
+
+      &_post_img {
+        width: 98%;
+        height: 400px;
+        margin: 1%;
+        border-radius: 17px;
+        object-fit: contain;
+      }
+
+      &_post_video{
+        width: 98%;
+        height: 400px;
+        margin: 1%;
+        border-radius: 17px;
+      }
+
+      &_footer {
+        display: flex;
+        width: 100%;
+        margin-left: 18px;
+
+        &_container {
+          display: flex;
+          align-items: center;
+
+          & > span {
+            width: 120px;
+          }
+
+          &_share {
+            display: flex;
+            align-items: center;
+            margin-left: 25%;
+          }
+        }
+
+        &_icons {
+          width: 25px;
+          margin: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.Bottom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &_img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+  }
+
+  & > span {
+    margin-left: 5px;
+  }
+  & > p {
+    margin-left: 25px;
+    color: $clr_orange;
+    word-break: break-all;
+    padding: 5px;
+  }
+
+  & > input {
+    width: 20pc;
+    margin-left: 10px;
+    border: none;
+    height: 5vh;
+    background-color: $clr_gray_extra_light;
+  }
+
+  &_addCommentBtn {
+    padding: 5px;
+    border: none;
+    background-color: $clr_green;
+    border-radius: 7px;
+    margin-left: 150px;
+    cursor: pointer;
+  }
+  &_reply {
+    width: 70px;
+    margin-left: 55px;
+    text-align: start;
+    margin: 10px 0 10px 55px;
+    color: $clr_green;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 7px;
+
+    & > p {
+      padding: 3px;
+      text-align: center;
+      margin: 3px;
+    }
+  }
+}

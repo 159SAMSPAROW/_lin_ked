@@ -1,0 +1,71 @@
+.ContentUploadContainer {
+  width: 90%;
+  height: auto;
+  background-color: $clr_gray_extra_light;
+  margin: 10px auto 10px auto;
+  border: 2px outset $clr_orange;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px $clr_blue;
+
+  &_content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 12%;
+  }
+
+  &_writingPart {
+    width: 29pc;
+    margin: 10px;
+    height: 4vh;
+    border: none;
+    border-radius: 7px;
+  }
+
+  &_profileimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  &_icons {
+    display: flex;
+    margin-left: 10px;
+
+    &_btn {
+      width: 80px;
+      height: 25px;
+      margin-left: 60%;
+      margin-top: auto;
+      padding: 1px;
+      border: none;
+      background-color: $clr_green;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    width: 100%;
+  }
+
+  &_icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+  &_imagePrev{
+    object-fit: contain;
+    width: 98%;
+    height: 250px;
+    margin: 1%;
+  }
+}
+#file, #file2{
+  display: none;
+}
